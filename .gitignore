@@ -1,3 +1,8 @@
 .purch_env/
 .vscode/
 __pycache__
+../.purchenv/
+db.sqlite
+.purchenv/
+trig_project/db.sqlite3
+

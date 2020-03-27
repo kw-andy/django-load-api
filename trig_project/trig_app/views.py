@@ -4,6 +4,8 @@ from django.contrib import messages
 from .models import Denomination,Retailer
 from django.views import generic
 
+from rest_framework import viewsets
+from .serializers import *
 # Create your views here.
 
 def profile_upload(request):
@@ -46,3 +48,15 @@ def denom_list(request):
 
 
     return render(request, template, {'all_denom': list_trig})
+
+
+class DenominationViewSet(viewsets.ModelViewSet):
+
+    queryset = Denomination.objects.all()
+    serializer_class = DenominationSerializer
+
+
+class RetailerViewSet(viewsets.ModelViewSet):
+
+    queryset = Retailer.objects.all()
+    serializer_class = RetailerSerializer
