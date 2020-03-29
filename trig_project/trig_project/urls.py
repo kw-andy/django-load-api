@@ -22,9 +22,8 @@ Including another URLconf
 from django.conf.urls import *
 from django.contrib import admin
 from django.urls import path,include
+from django.views.generic.base import TemplateView
 #from rest_framework import routers
-
-
 
 from rest_framework.routers import DefaultRouter
 from trig_app.views import *
@@ -34,21 +33,12 @@ router.register(r'denomination', DenominationViewSet)
 router.register(r'retailer', RetailerViewSet)
 
 
-
-#urlpatterns = patterns('',
-#    # Examples:
-#    # url(r'^$', 'eboutique.views.home', name='home'),
-#    # url(r'^blog/', include('blog.urls')),
-#
-#    url(r'^admin/', include(admin.site.urls)),
-#    url(r'^api/', include(router.urls)),
-#  #   url(r'^api/', include('rest_framework.urls', namespace='rest_framework'))
-#)
-
-
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-file/',profile_upload,name='profile_upload'),
-    path('home/',denom_list,name='denom_list'),
+    path('denom_list/',denom_list,name='denom_list'),
+    path('home',denom_list,name='home'),
     path('api/',include(router.urls)),
+    path('',TemplateView.as_view(template_name='index.html'),
+        name='home'),
 ]
