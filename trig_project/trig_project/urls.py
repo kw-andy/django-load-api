@@ -37,7 +37,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('upload-file/',profile_upload,name='profile_upload'),
     path('denom_list/',denom_list,name='denom_list'),
-    path('home',denom_list,name='home'),
     path('api/',include(router.urls)),
     path('',TemplateView.as_view(template_name='index.html'),
         name='home'),
