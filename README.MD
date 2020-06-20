@@ -9,6 +9,7 @@ This is Django project was built, to test a few ideas I had
 - Admin web page `http://127.0.0.1:8000/admin`
 
 
+
 Next steps are the following: 
 
 - Change SQLite DB to a Postgres DB and maybe setup a Docker for hosting the Postgres DB
@@ -32,4 +33,5 @@ API retailer
 Trigram
 
 ![screenshot](denom.png)
+
 
