@@ -12,7 +12,7 @@ This is Django project was built, to test a few ideas I had
 
 Next steps are the following: 
 
-- Change SQLite DB to a Postgres DB and maybe setup a Docker for hosting the Postgres DB
+- Change SQLite DB to a Postgres DB and maybe setup a Docker for hosting the Postgres DB - done for the postgres. Needs to be done for the docker part.
 - Adding extra columns on the models for retailers and denomination
 - Add CSS in the pages mentioned above
 
