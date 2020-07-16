@@ -31,6 +31,7 @@ from trig_app.views import *
 router = DefaultRouter()
 router.register(r'denomination', DenominationViewSet)
 router.register(r'retailer', RetailerViewSet)
+router.register(r'denomretail', DenomRetailerViewSet)#
 
 
 urlpatterns = [

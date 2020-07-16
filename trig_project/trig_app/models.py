@@ -4,6 +4,7 @@ from django.db import models
 
 class Retailer(models.Model):
     retail_name = models.CharField(max_length=30)
+    retail_addr = models.CharField(max_length=300, null=True)
     def __str__(self):
         return self.retail_name
 

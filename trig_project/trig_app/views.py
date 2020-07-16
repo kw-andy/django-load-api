@@ -60,3 +60,9 @@ class RetailerViewSet(viewsets.ModelViewSet):
 
     queryset = Retailer.objects.all()
     serializer_class = RetailerSerializer
+
+
+class DenomRetailerViewSet(viewsets.ModelViewSet):
+
+    queryset = Denomination.objects.all()
+    serializer_class = DenomRetailSerializer    #
