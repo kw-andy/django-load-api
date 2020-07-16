@@ -6,6 +6,7 @@ This is Django project was built, to test a few ideas I had
 - Show a trigram of the data in the DB through this URL `http://127.0.0.1:8000/denom_list/`
 - API GET and POST for Denomination model `http://127.0.0.1:8000/api/denomination/`
 - API GET and POST for Retailer `http://127.0.0.1:8000/api/retailer/`
+- API GET and POST for denomretail `http://127.0.0.1:8000/api/denomretail/`
 - Admin web page `http://127.0.0.1:8000/admin`
 
 
